@@ -1,8 +1,5 @@
 'use client'
 
-import { JetBrains_Mono } from '@next/font/google'
-
-
 interface CodePreviewProps {
   code: string
 }
@@ -22,11 +19,13 @@ export function CodePreview({ code }: CodePreviewProps) {
             </div>
           ))}
         </div>
+        
         <div
         id="shiki-code"
         className="absolute inset-0 overflow-auto leading-relaxed scrollbar scrollbar-thumb-[#2B283B] scrollbar-track-transparent"
         dangerouslySetInnerHTML={{ __html: code }}
       />
+      
       </div>
     </>
   )

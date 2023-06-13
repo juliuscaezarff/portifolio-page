@@ -1,43 +1,50 @@
 import {
-  Code2,
-  Cog,
+  Briefcase,
+  Contact,
   Cpu,
   FileJson,
   Film,
   Joystick,
   MoreHorizontal,
   Terminal,
-} from 'lucide-react';
-import { OpenFilesSubMenu } from '../OpenFilesTabs/OpenFilesSubMenu';
-import { File } from './File';
-import { Folder } from './Folder';
-import { SubMenu } from './SubMenu';
+  User
+} from 'lucide-react'
+import { OpenFilesSubMenu } from '../OpenFilesTabs/OpenFilesSubMenu'
+import { File } from './File'
+import { Folder } from './Folder'
+import { SubMenu } from './SubMenu'
 
 export type FileType = {
-  title: string;
-  icon: React.ReactNode;
-};
+  title: string
+  icon: React.ReactNode
+}
 
 export const explorerFiles: Record<string, FileType> = {
-  "/vscode/about": {
+  '/vscode/about': {
     icon: <FileJson size={16} />,
-    title: "about.json",
+    title: 'about.md'
   },
-  "/vscode/personal": {
+  '/vscode/skills': {
     icon: <FileJson size={16} />,
-    title: "personal.json",
+    title: 'skills.js'
   },
-  "/terminal/general": {
-    icon: <Terminal size={16} />,
-    title: "General",
+  '/terminal/projects': {
+    icon: <Briefcase size={16} />,
+    title: 'projects.md'
   },
-  "/terminal/fish": { icon: <Cog size={16} />, title: "config.fish" },
-  "/others/dev-setup": { icon: <Cpu size={16} />, title: "dev.setup" },
-  "/others/gaming-setup": {
-    icon: <Joystick size={16} />,
-    title: "gaming.setup",
+  '/terminal/contact': { 
+    icon: <Contact size={16} />, 
+    title: 'contact.css' 
   },
-};
+  '/others/dev-setup': { 
+    icon: <Cpu size={16} />, 
+    title: 'dev.setup' 
+  },
+  '/others/personal': {
+    icon: <User size={16} />,
+    title: 'personal.json'
+  }
+}
 
 export function Explorer() {
   return (
@@ -60,22 +67,22 @@ export function Explorer() {
             </File> */}
             <File href="/vscode/about">
               <FileJson size={16} />
-              about.MD
+              about.md
             </File>
-            <File href="/vscode/personal">
+            <File href="/vscode/skills">
               <FileJson size={16} />
-              personal.ts
+              skills.js
             </File>
           </Folder>
 
           <Folder title="Terminal">
-            <File href="/terminal/general">
-              <Terminal size={16} />
-              General
+            <File href="/terminal/projects">
+              <Briefcase size={16} />
+              projects.md
             </File>
-            <File href="/terminal/fish">
-              <Cog size={16} />
-              config.fish
+            <File href="/terminal/contact">
+              <Contact size={16} />
+              contact.css
             </File>
           </Folder>
 
@@ -84,9 +91,9 @@ export function Explorer() {
               <Cpu size={16} />
               dev.setup
             </File>
-            <File href="/others/gaming-setup">
-              <Joystick size={16} />
-              gaming.setup
+            <File href="/others/personal">
+              <User size={16} />
+              personal.json
             </File>
             {/* <File href="/others/recording-setup">
             <Film size={16} />

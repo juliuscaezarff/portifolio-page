@@ -7,12 +7,8 @@ export const metadata = {
 }
 
 export default async function DevSetup() {
-  const code = `const message = 'Hello, world!';
-  function sum(a, b) {
-    return a + b;
-  }
-  console.log('This is a test');
-    console.log()`
+
+  const code = `console.log("teste")`
 
   const highlighter = await shiki.getHighlighter({
     theme: 'rose-pine-moon'

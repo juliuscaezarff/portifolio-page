@@ -19,7 +19,7 @@ export default async function Personal() {
     },
     "dependencies": {
       "peso": 74,
-      "altura": 1.8,
+      "altura": 1.81,
       "sexo": "masculino",
       "cor": "branco"
     },

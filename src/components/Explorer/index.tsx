@@ -75,7 +75,7 @@ export function Explorer() {
             </File>
           </Folder>
 
-          <Folder title="Terminal">
+          <Folder title="Outlines">
             <File href="/terminal/projects">
               <Briefcase size={16} />
               projects.md

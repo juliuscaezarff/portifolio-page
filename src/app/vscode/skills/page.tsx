@@ -6,30 +6,25 @@ export const metadata = {
 }
 
 export default async function Skills() {
-  const code = `const skills = {
-    javascript: true,
-    typescript: true,
-    reactjs: true,
-    vite: true,
-    nextjs: true,
-    reactNative: true,
-    expo: true,
-    styledComponents: true,
-    tailwind: true,
-    node: true,
-    apiRestful: true,
-    prisma: true,
-    mysql: true,
-    mongodb: true,
-    git: true,
-    github: true
-  };
-  
-  console.log('Minhas habilidades:');
-  for (const skill in skills) {
-    if (skills[skill]) {
-      console.log(skill);
-    }
+  const code = `export default function MySkills() {
+    return (
+      <>
+        <p>javascript</p>
+        <p>typescript</p>
+        <p>reactjs</p>
+        <p>vite</p>
+        <p>nextjs</p>
+        <p>reactNative</p>
+        <p>styledComponents</p>
+        <p>tailwind</p>
+        <p>node</p>
+        <p>apiRestful</p>
+        <p>mysql</p>
+        <p>mongodb</p>
+        <p>git</p>
+        <p>github</p>
+      </>
+    )
   }`
 
   const highlighter = await shiki.getHighlighter({

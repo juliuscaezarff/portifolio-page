@@ -24,9 +24,13 @@ export const explorerFiles: Record<string, FileType> = {
     icon: <FileJson size={16} />,
     title: 'instructions.md'
   },
+  '/vscode/about': {
+    icon: <FileJson size={16} />,
+    title: 'about.md'
+  },
   '/vscode/skills': {
     icon: <FileJson size={16} />,
-    title: 'skills.js'
+    title: 'skills.tsx'
   },
   '/terminal/projects': {
     icon: <Briefcase size={16} />,
@@ -66,13 +70,13 @@ export function Explorer() {
               <FileJson size={16} />
               instructions.md
             </File>
-            {/* <File href="/vscode/general">
+            <File href="/vscode/about">
             <FileJson size={16} />
-            General
-            </File> */}
+            about.md
+            </File>
             <File href="/vscode/skills">
               <FileJson size={16} />
-              skills.js
+              skills.tsx
             </File>
           </Folder>
 

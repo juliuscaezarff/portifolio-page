@@ -13,6 +13,7 @@ export default async function instructions() {
   - É um vscode aonde cada pasta conta um pouco sobre mim
   - É possível navegar entre as pastas
   - Cada pasta tem um tipo de arquivo, json, js, md...
+  - Existe uma barra lateral caso ocorra um corte no conteúdo
   - Divirta-se 😄`
 
   const highlighter = await shiki.getHighlighter({

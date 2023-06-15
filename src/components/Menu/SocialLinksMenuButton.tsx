@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     name: 'linkedin',
-    url: 'www.linkedin.com/in/julius-caezar',
+    url: 'https://www.linkedin.com/in/julius-caezar/',
     icon: <Linkedin size={14} />
   },
   // {

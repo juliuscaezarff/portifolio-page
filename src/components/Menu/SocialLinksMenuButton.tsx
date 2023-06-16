@@ -20,11 +20,11 @@ const socialLinks = [
     url: 'https://www.linkedin.com/in/julius-caezar/',
     icon: <Linkedin size={14} />
   },
-  // {
-  //   name: 'twitter',
-  //   url: '',
-  //   icon: <Twitter size={14} />
-  // }
+  {
+    name: 'twitter',
+    url: 'https://twitter.com/julius___C',
+    icon: <Twitter size={14} />
+  }
 ]
 
 export function SocialLinksMenuButton() {

@@ -2,28 +2,35 @@ import { CodePreview } from '@/components/CodePreview'
 import shiki from 'shiki'
 
 export const metadata = {
-  title: 'VSCode Extensions'
+  title: 'Skills'
 }
 
 export default async function Skills() {
-  const code = `export default function MySkills() {
+  const code = `interface SkillsProps {
+    skill: string,
+    level: string,
+  }
+  
+  const SkillsData: SkillsProps[] = [
+    { skill: 'JavaScript', level: 'Avançado' },
+    { skill: 'TypeScript', level: 'Avançado' },
+    { skill: 'React', level: 'Avançado' },
+    { skill: 'Next.js', level: 'Avançado' },
+    { skill: 'ReactNative', level: 'Intermediário' },
+    { skill: 'Node.js', level: 'Intermediário' },
+    { skill: 'CSS', level: 'Avançado' },
+    { skill: 'Tailwind', level: 'Avançado' },
+    { skill: 'Figma', level: 'Intermediário' },
+    { skill: 'Ui/Ux', level: 'Avançado' },
+    { skill: 'Spline', level: 'Básico' },
+  ];
+  
+  export default function MySkills({ skill, level }: SkillsProps) {
     return (
-      <>
-        <p>javascript</p>
-        <p>typescript</p>
-        <p>reactjs</p>
-        <p>vite</p>
-        <p>nextjs</p>
-        <p>reactNative</p>
-        <p>styledComponents</p>
-        <p>tailwind</p>
-        <p>node</p>
-        <p>apiRestful</p>
-        <p>mysql</p>
-        <p>mongodb</p>
-        <p>git</p>
-        <p>github</p>
-      </>
+      <div className="skills-content">
+      <h3>{skill}</h3>
+      <p>{level}</p>
+    </div>
     )
   }`
 

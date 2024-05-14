@@ -3,7 +3,7 @@ import shiki from 'shiki'
 
 export const revalidate = 1800 // revalidate every 30 minutes
 export const metadata = {
-  title: 'Terminal'
+  title: 'About'
 }
 
 export default async function About() {
@@ -17,8 +17,11 @@ os usuários.
 Reactjs e Typescript são minhas ferramentas favoritas, e 
 com elas, posso transformar linhas de código em experiências 
 incríveis.
+Também me aventuro no mundo dos elementos tridimensionais, 
+colocando 3D em sites para que os usuários tenham uma 
+experiência mais imersiva ao navegarem.
 Além do código gosto muito de video game, tanto FPS quanto 
-os de sobrevivência, e na verade foram eles que me apresentaram 
+os de sobrevivência, e na verdade foram eles que me apresentaram 
 o mundo da programação.
 Se quiser me conhecer mais na pasta de contatos e no ícone de 
 perfil tem alguns links para redes sociais.`

@@ -22,7 +22,7 @@ export default async function Projects() {
   - https://github.com/juliuscaezarff/Design-System-project`
 
   const highlighter = await shiki.getHighlighter({
-    theme: 'rose-pine-moon'
+    theme: 'dark-plus'
   })
 
   const output = highlighter.codeToHtml(code, { lang: 'md' })

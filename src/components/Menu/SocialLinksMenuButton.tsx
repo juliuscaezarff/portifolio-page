@@ -38,7 +38,7 @@ export function SocialLinksMenuButton() {
         <DropdownMenu.Content side='right' className="bg-[#2a273f] z-10 flex flex-col rounded-lg overflow-auto">
           {socialLinks.map(socialItem => {
             return (
-              <DropdownMenu.Item key={socialItem.url} className="outline-none">
+              <DropdownMenu.Item key={socialItem.url} className="outline-hidden">
                 <a
                   href={socialItem.url}
                   target="_blank"

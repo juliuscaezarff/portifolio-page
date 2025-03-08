@@ -27,7 +27,7 @@ Se quiser me conhecer mais na pasta de contatos e no ícone de
 perfil tem alguns links para redes sociais.`
 
   const highlighter = await shiki.getHighlighter({
-    theme: 'rose-pine-moon'
+    theme: 'dark-plus'
   })
 
   const output = highlighter.codeToHtml(code, { lang: 'md' })

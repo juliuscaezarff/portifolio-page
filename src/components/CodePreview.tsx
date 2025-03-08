@@ -10,7 +10,7 @@ export function CodePreview({ code }: CodePreviewProps) {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex ">
         <div className="w-12 mr-2 text-gray-500">
           {/* Números das linhas */}
           {lines.map((_, index) => (
@@ -22,7 +22,7 @@ export function CodePreview({ code }: CodePreviewProps) {
         
         <div
         id="shiki-code"
-        className="absolute inset-0 overflow-auto leading-relaxed scrollbar scrollbar-thumb-[#2B283B] scrollbar-track-transparent"
+        className="absolute inset-0 overflow-auto leading-relaxed scrollbar scrollbar-thumb-[#2B283B] scrollbar-track-transparent pl-3"
         dangerouslySetInnerHTML={{ __html: code }}
       />
       

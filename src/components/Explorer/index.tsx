@@ -52,7 +52,7 @@ export const explorerFiles: Record<string, FileType> = {
 
 export function Explorer() {
   return (
-    <div className="py-2 px-4 text-[#8F8CA8]">
+    <div className="py-2 px-4 text-[#8F8CA8] border-r border-t border-l border-[#363247]">
       <strong className="font-medium text-xs pl-2 flex items-center justify-between">
         EXPLORER
         <MoreHorizontal size={16} strokeWidth={1.5} />

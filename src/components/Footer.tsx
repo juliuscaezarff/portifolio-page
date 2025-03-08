@@ -2,7 +2,7 @@ import { Github } from "lucide-react";
 
 export function Footer() {
   return (
-    <div className="text-sm px-3 text-[#8F8CA8] flex gap-3 items-center justify-end bg-[#2a273f]">
+    <div className="text-sm px-3 text-[#8F8CA8] flex gap-3 items-center justify-end bg-[#1E1E1E] border-[#363247] border-t">
       <a 
         href="https://github.com/juliuscaezarff" 
         target="_blank" 

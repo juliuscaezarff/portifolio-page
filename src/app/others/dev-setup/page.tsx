@@ -11,7 +11,7 @@ export default async function DevSetup() {
   const code = `console.log("em breve")`
 
   const highlighter = await shiki.getHighlighter({
-    theme: 'rose-pine-moon'
+    theme: 'dark-plus'
   })
 
   const output = highlighter.codeToHtml(code, { lang: 'js' })

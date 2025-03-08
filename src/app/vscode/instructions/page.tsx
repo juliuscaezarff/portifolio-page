@@ -17,7 +17,7 @@ export default async function instructions() {
   - Divirta-se 😄`
 
   const highlighter = await shiki.getHighlighter({
-    theme: 'rose-pine-moon'
+    theme: 'dark-plus'
   })
 
   const output = highlighter.codeToHtml(code, { lang: 'md' })

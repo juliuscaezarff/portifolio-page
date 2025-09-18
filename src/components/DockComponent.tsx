@@ -15,7 +15,7 @@ const data = [
   {
     title: "Home",
     icon: (
-      <HomeIcon className="h-full w-full text-neutral-600 dark:text-neutral-300" />
+      <Home className="h-full w-full text-neutral-600 dark:text-neutral-300" />
     ),
     href: "#",
   },

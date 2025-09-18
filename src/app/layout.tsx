@@ -1,32 +1,33 @@
-import '../styles/global.css'
+import "../styles/global.css";
 
-import { Inter } from '@next/font/google'
+import { Inter } from "@next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-import { Menu } from '@/components/Menu'
-import { Header } from '@/components/Header'
-import { Explorer } from '@/components/Explorer'
-import { Footer } from '@/components/Footer'
-import { OpenFilesTabs } from '@/components/OpenFilesTabs'
-import { OpenFilesProvider } from '@/hooks/useOpenFiles'
+import { Menu } from "@/components/Menu";
+import { Header } from "@/components/Header";
+import { Explorer } from "@/components/Explorer";
+import { Footer } from "@/components/Footer";
+import { OpenFilesTabs } from "@/components/OpenFilesTabs";
+import { OpenFilesProvider } from "@/hooks/useOpenFiles";
+import { DockComponent } from "@/components/DockComponent";
 
 export const metadata = {
   title: {
-    default: 'Julius Caezar',
-    template: '%s | Julius Caezar'
+    default: "Julius Caezar",
+    template: "%s | Julius Caezar",
   },
   robots: {
     index: true,
     follow: true,
   },
   description: "Software Engineer Student",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={inter.className}>
@@ -49,8 +50,9 @@ export default function RootLayout({
             </OpenFilesProvider>
             <Footer />
           </div>
+          <DockComponent />
         </div>
       </body>
     </html>
-  )
+  );
 }

@@ -3,7 +3,7 @@
 import {
   Activity,
   Component,
-  HomeIcon,
+  Home,
   Mail,
   Package,
   SunMoon,

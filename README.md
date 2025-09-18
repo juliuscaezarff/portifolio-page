@@ -1,6 +1,6 @@
 ### To do
 
 - [ X ] configurate shadcnUI
-- [ ] dock
+- [ X ] dock
 - [ ] project page
 - [ ] terminal
